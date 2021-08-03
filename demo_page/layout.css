@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+}
+
+.head{
+    color:white;
+    background-color:#223344;
+    font-weight: bold;
+    font-size: 18px;
+    /* text-align:center; */
+    letter-spacing: 3px;
+    padding: 15px;
+
+    position:fixed;
+    align-self: center;
+    z-index:2008;
+    width: 1600px;
+    height:25px;
+}
+
+.homepage{
+    max-width: 1250px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 廣告區 */
+.main{
+    background-color: aliceblue;
+    /*轉成水平排列*/
+    display: flex;
+    /*區塊於畫面置中*/
+    justify-content: center;
+    /*允許內部區塊往下*/
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 280px;
+    margin: 10px;
+    text-align: start;
+    /* border: 1px solid red; */
+}
+
+.button{
+    font-size: 10px;
+    width: 60px;
+    height: 24px;
+    color:aliceblue;
+    background-color: crimson;
+}
+
+/* 畫面處理 */
+.boxbutton{
+    background-color: aliceblue;
+    /*轉成水平排列*/
+    display: flex;
+    /*區塊於畫面置中*/
+    justify-content: center;
+    /*允許內部區塊往下*/
+    flex-wrap: wrap;
+    background-color:brown;
+    color:honeydew;
+    text-align: center;
+}
+
+/*CSS media Query*/
+@media (max-width:1250px){
+    /*如果螢幕寬度小於1250px，套用此區塊設定*/
+    .box{
+        width: 45%;
+    }
+}
+
+@media (max-width:500px){
+    /*如果螢幕寬度小於500px，套用此區塊設定*/
+    .head{
+        font-size: 24px;
+    }
+    .box{
+        width: 90%;
+    }
+}
+
